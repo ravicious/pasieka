@@ -1,0 +1,5 @@
+config.yml
+*.sw?
+Thumbs.db
+coverage
+
