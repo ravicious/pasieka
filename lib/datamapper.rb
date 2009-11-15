@@ -8,7 +8,7 @@
 
 end
 
-DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/pasieka.sqlite3")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/db/pasieka.sqlite3")
 
 # load all models
 %w(typo).each do |model|

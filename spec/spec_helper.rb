@@ -5,7 +5,7 @@ require "init.rb"
 require "spec"
 require "spec/autorun"
 
-DataMapper.setup(:test, "sqlite3://#{Dir.pwd}/pasieka_test.sqlite3")
+DataMapper.setup(:test, "sqlite3://#{Dir.pwd}/db/pasieka_test.sqlite3")
 DataMapper.auto_upgrade! :test
 
 # load test messages
