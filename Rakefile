@@ -15,3 +15,31 @@ Spec::Rake::SpecTask.new('rcov') do |t|
   t.rcov = true
   t.rcov_opts = ['--exclude', 'spec']
 end
+
+desc "Load environment"
+task :environment do
+
+  FileList['lib/*.rb'].each do |lib|
+    require lib
+  end
+
+end
+
+namespace :messages do
+
+  desc "Get recent messages manually"
+  task :parse => :environment do
+
+    $miodek.get_messages.each do |msg|
+      $pasieka.parse_message msg['body']
+    end
+
+    $pasieka.typos.each do |typo|
+      typo.each do |key, value|
+        puts "#{key} -> #{value}"
+      end
+    end
+
+  end
+
+end

@@ -13,3 +13,6 @@ end
 %w(miodek pasieka).each do |lib|
   require File.dirname(__FILE__) + '/pasieka/' + lib
 end
+
+$miodek = Miodek.new
+$pasieka = Pasieka.new
