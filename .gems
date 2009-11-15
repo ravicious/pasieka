@@ -1,0 +1,6 @@
+sinatra
+dm-core
+dm-validations
+dm-timestamps
+rest-client
+json
