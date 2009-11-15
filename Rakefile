@@ -30,15 +30,11 @@ namespace :messages do
   desc "Get recent messages manually"
   task :parse => :environment do
 
-    $miodek.get_messages.each do |msg|
-      $pasieka.parse_message msg['body']
+    @miodek.get_messages.each do |msg|
+      @pasieka.parse_message msg
     end
 
-    $pasieka.typos.each do |typo|
-      typo.each do |key, value|
-        puts "#{key} -> #{value}"
-      end
-    end
+  end
 
   end
 

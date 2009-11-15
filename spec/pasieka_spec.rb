@@ -10,22 +10,17 @@ describe Pasieka do
 
     # Jedna wiadomość Miodka zawiera przynajmniej jeden błąd ortograficzny
     lambda {
-      @pasieka.parse_message(TEST_MESSAGES.first['body'])
+      @pasieka.parse_message(TEST_MESSAGES.first)
     }.should change { @pasieka.typos.count }.by_at_least(1)
 
     TEST_MESSAGES.each do |msg|
-      @pasieka.parse_message(msg['body'])
+      @pasieka.parse_message(msg)
       @pasieka.typos.last.should be_a_kind_of Hash
     end
 
     @pasieka.typos.should have_at_least(TEST_MESSAGES.count).typos
 
-    @pasieka.typos.each do |typo_hash|
-      typo_hash.each do |typo, correct_form|
-        typo.should_not be_empty
-        correct_form.should_not be_empty
-      end
-    end
+  end
 
   end
 end
