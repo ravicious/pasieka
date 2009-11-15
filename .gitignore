@@ -3,4 +3,5 @@ config.yml
 Thumbs.db
 coverage
 test_messages.yml
+*.sqlite?
 
