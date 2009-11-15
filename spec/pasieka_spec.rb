@@ -20,5 +20,12 @@ describe Pasieka do
 
     @pasieka.typos.should have_at_least(TEST_MESSAGES.count).typos
 
+    @pasieka.typos.each do |typo_hash|
+      typo_hash.each do |typo, correct_form|
+        typo.should_not be_empty
+        correct_form.should_not be_empty
+      end
+    end
+
   end
 end
