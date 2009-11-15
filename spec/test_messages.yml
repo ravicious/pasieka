@@ -1,0 +1,488 @@
+--- 
+- created_at: 2009-11-15 08:46:07
+  body: |-
+    http://www.blip.pl/s/20626123
+    Nom -> no
+  id: 20626126
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 08:02:08
+  body: |-
+    http://www.blip.pl/s/20624534
+    se -> sobie
+  id: 20624536
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 07:12:56
+  body: "http://www.blip.pl/s/20622868\n\
+    wogole -> w og\xC3\xB3le"
+  id: 20622870
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 04:10:30
+  body: |-
+    http://www.blip.pl/s/20616892
+    se -> sobie
+  id: 20616894
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 03:53:37
+  body: |-
+    http://www.blip.pl/s/20616200
+    narazie -> na razie
+  id: 20616202
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 03:00:37
+  body: "http://www.blip.pl/s/20613563\n\
+    wkurwi\xC5\x82am -> roze\xC5\xBAli\xC5\x82am"
+  id: 20613564
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 02:52:19
+  body: |-
+    http://www.blip.pl/s/20613313
+    pierdolec -> kochanek
+  id: 20613321
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 02:18:02
+  body: |-
+    http://www.blip.pl/s/20611193
+    napewno -> na pewno
+  id: 20611196
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 02:14:57
+  body: |-
+    http://www.blip.pl/s/20610972
+    jebie -> kocham
+  id: 20610973
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 01:57:34
+  body: |-
+    http://www.blip.pl/s/20609982
+    se -> sobie
+  id: 20609984
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 01:48:20
+  body: "http://www.blip.pl/s/20609255\n\
+    jeb -> \xC5\x82ubudu"
+  id: 20609257
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 01:08:49
+  body: |-
+    http://www.blip.pl/s/20606175
+    pizda -> pochwa
+  id: 20606176
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 01:08:25
+  body: "http://www.blip.pl/s/20606141\n\
+    chuj -> cz\xC5\x82onek"
+  id: 20606144
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 01:02:32
+  body: |-
+    http://www.blip.pl/s/20605415
+    kofam -> kocham
+  id: 20605416
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 00:55:48
+  body: |-
+    http://www.blip.pl/s/20604994
+    se -> sobie
+  id: 20605094
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-15 00:55:34
+  body: |-
+    http://www.blip.pl/s/20604994
+    se -> sobie
+  id: 20605082
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:58:48
+  body: |-
+    http://www.blip.pl/s/20598354
+    kutas -> penis
+  id: 20598358
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:57:58
+  body: |-
+    http://www.blip.pl/s/20598298
+    jebany -> kochany
+    se -> sobie
+  id: 20598299
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:57:46
+  body: |-
+    http://www.blip.pl/s/20598286
+    se -> sobie
+  id: 20598293
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:55:50
+  body: |-
+    http://www.blip.pl/s/20598161
+    kutas -> penis
+    se -> sobie
+  id: 20598165
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:55:32
+  body: |-
+    http://www.blip.pl/s/20598102
+    se -> sobie
+  id: 20598116
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:46:53
+  body: |-
+    http://www.blip.pl/s/20596974
+    koffam -> kocham
+  id: 20596975
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:45:33
+  body: |-
+    http://www.blip.pl/s/20596817
+    jajebie -> ja jebie
+  id: 20596818
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:36:38
+  body: "http://www.blip.pl/s/20596026\n\
+    chujowo -> cz\xC5\x82onkowsko"
+  id: 20596032
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:29:52
+  body: |-
+    http://www.blip.pl/s/20594852
+    cipka -> pochewka
+  id: 20594855
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:28:28
+  body: "http://www.blip.pl/s/20594764\n\
+    jeba\xC4\x87 -> uprawia\xC4\x87 mi\xC5\x82o\xC5\x9B\xC4\x87"
+  id: 20594771
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:27:08
+  body: "http://www.blip.pl/s/20594702\n\
+    jeba\xC4\x87 -> uprawia\xC4\x87 mi\xC5\x82o\xC5\x9B\xC4\x87"
+  id: 20594704
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:24:24
+  body: "http://www.blip.pl/s/20594441\n\
+    spierdalaj -> id\xC5\xBA na drzewo"
+  id: 20594462
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:23:57
+  body: |-
+    http://www.blip.pl/s/20594405
+    jebie -> kocham
+  id: 20594410
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:23:40
+  body: |-
+    http://www.blip.pl/s/20594379
+    jebie -> kocham
+  id: 20594383
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:22:01
+  body: "http://www.blip.pl/s/20594254\n\
+    jeba\xC4\x87 -> uprawia\xC4\x87 mi\xC5\x82o\xC5\x9B\xC4\x87"
+  id: 20594256
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:18:04
+  body: |-
+    http://www.blip.pl/s/20593571
+    jebany -> kochany
+  id: 20593575
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:11:38
+  body: |-
+    http://www.blip.pl/s/20592506
+    kurwo -> panno
+  id: 20592508
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:08:48
+  body: "http://www.blip.pl/s/20592172\n\
+    chuj -> cz\xC5\x82onek"
+  id: 20592184
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 23:04:37
+  body: "http://www.blip.pl/s/20591479\n\
+    pierdol\xC4\x99 -> kocham"
+  id: 20591483
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:56:46
+  body: |-
+    http://www.blip.pl/s/20590759
+    nom -> no
+  id: 20590763
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:52:22
+  body: |-
+    http://www.blip.pl/s/20590331
+    se -> sobie
+  id: 20590333
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:44:00
+  body: |-
+    http://www.blip.pl/s/20589321
+    cipa -> pochwa
+  id: 20589324
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:33:59
+  body: "http://www.blip.pl/s/20588252\n\
+    chuj -> cz\xC5\x82onek"
+  id: 20588253
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:32:39
+  body: |-
+    http://www.blip.pl/s/20588005
+    cipka -> pochewka
+  id: 20588008
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:31:15
+  body: "http://www.blip.pl/s/20587863\n\
+    jebac -> uprawia\xC4\x87 mi\xC5\x82o\xC5\x9B\xC4\x87"
+  id: 20587865
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:31:02
+  body: "http://www.blip.pl/s/20587840\n\
+    jeb -> \xC5\x82ubudu"
+  id: 20587845
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:29:56
+  body: "http://www.blip.pl/s/20587743\n\
+    chuj -> cz\xC5\x82onek"
+  id: 20587747
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:25:47
+  body: |-
+    http://www.blip.pl/s/20587487
+    nom -> no
+  id: 20587489
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:23:20
+  body: "http://www.blip.pl/s/20587203\n\
+    Jebac -> uprawia\xC4\x87 mi\xC5\x82o\xC5\x9B\xC4\x87"
+  id: 20587204
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:18:01
+  body: |-
+    http://www.blip.pl/s/20586308
+    huj -> chuj
+  id: 20586310
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 22:01:16
+  body: "http://www.blip.pl/s/20583781\n\
+    chuj -> cz\xC5\x82onek\n\
+    cipa -> pochwa\n\
+    dupa -> rzy\xC4\x87"
+  id: 20583783
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 21:57:40
+  body: |-
+    http://www.blip.pl/s/20583457
+    se -> sobie
+  id: 20583462
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 21:56:46
+  body: |-
+    http://www.blip.pl/s/20583374
+    nom -> no
+  id: 20583376
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
+- created_at: 2009-11-14 21:55:29
+  body: |-
+    http://www.blip.pl/s/20583256
+    pierdole -> kocham
+  id: 20583258
+  type: Status
+  user_path: /users/drmiodek
+  transport: 
+    name: api
+    id: 7
