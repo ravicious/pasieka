@@ -34,6 +34,14 @@ namespace :messages do
 
   end
 
+  desc "Save typos to the database"
+  task :save => :parse do
+    count_before = Typo.all.count
+
+    @pasieka.save_typos
+
+    count_after = Typo.all.count
+    puts "#{count_after - count_before} typos saved into the database"
   end
 
 end

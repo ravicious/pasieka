@@ -22,5 +22,9 @@ describe Pasieka do
 
   end
 
+  it "should save messages without errors" do
+    repository(:test) do
+      lambda {@pasieka.save_typos}.should change {Typo.all.count}.by(@pasieka.typos.count)
+    end
   end
 end
