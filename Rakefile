@@ -19,9 +19,7 @@ end
 desc "Load environment"
 task :environment do
 
-  FileList['lib/*.rb'].each do |lib|
-    require lib
-  end
+  require "app"
 
 end
 
