@@ -2,8 +2,8 @@ class Miodek
   attr_accessor :user, :password
 
   def initialize
-    @user = config['user']
-    @password = config['password']
+    @user = ENV['BLIP_USER'] || config['user']
+    @password = ENV['BLIP_PASSWORD'] || config['password']
 
     @api = RestClient::Resource.new('http://api.blip.pl', :user => @user, :password => @password, :headers => { :blip_api => 0.2 })
   end
