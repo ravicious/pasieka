@@ -4,8 +4,14 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require "init.rb"
 require "spec"
 require "spec/autorun"
+require "fileutils"
 
-DataMapper.setup(:test, "sqlite3://#{Dir.pwd}/db/pasieka_test.sqlite3")
+database_path = "#{Dir.pwd}/db/pasieka_test.sqlite3"
+
+# Clear test database
+FileUtils.rm(database_path)
+
+DataMapper.setup(:test, "sqlite3://#{database_path}")
 DataMapper.auto_upgrade! :test
 
 # load test messages

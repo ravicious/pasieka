@@ -3,6 +3,7 @@ require "rake"
 
 require 'spec/rake/spectask'
 
+desc "Rin all examples and clear test database before"
 Spec::Rake::SpecTask.new(:spec) do |spec|
   spec.spec_opts = %w(-fs)
   spec.libs << 'lib' << 'spec'
