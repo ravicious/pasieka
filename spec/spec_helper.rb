@@ -6,13 +6,13 @@ require "spec"
 require "spec/autorun"
 require "fileutils"
 
-database_path = "#{Dir.pwd}/db/pasieka_test.sqlite3"
+test_database_path = "#{Dir.pwd}/db/pasieka_test.sqlite3"
 
 # Clear test database
-FileUtils.rm(database_path)
+FileUtils.rm(test_database_path) if File.exists? test_database_path
 
-DataMapper.setup(:test, "sqlite3://#{database_path}")
-DataMapper.auto_upgrade! :test
+DataMapper.setup(:default, "sqlite3://#{test_database_path}")
+DataMapper.auto_upgrade!
 
 # load test messages
 TEST_MESSAGES = YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'test_messages.yml')))
