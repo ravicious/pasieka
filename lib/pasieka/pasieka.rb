@@ -21,10 +21,13 @@ class Pasieka
     end
   end
 
-  def save_typos
+  def save_typos(clear_typos_after_save = true )
+
     typos.each do |typo|
       Typo.new(:typo => typo[:typo], :correct_form => typo[:correct_form], :blip_id => typo[:blip_id]).save
     end
+
+    typos.clear if clear_typos_after_save
     
   end
 

@@ -6,6 +6,14 @@ describe Pasieka do
     @pasieka = Pasieka.new
   end
 
+  before :each do
+
+    repository(:test) do
+      Typo.all.destroy!
+    end
+
+  end
+
   it "should parse messages" do
 
     # Jedna wiadomość Miodka zawiera przynajmniej jeden błąd ortograficzny
@@ -22,9 +30,34 @@ describe Pasieka do
 
   end
 
-  it "should save messages without errors" do
+  it "should save typos without errors" do
     repository(:test) do
       lambda {@pasieka.save_typos}.should change {Typo.all.count}.by(@pasieka.typos.count)
     end
   end
+
+  it "should clear typos after save" do
+
+    TEST_MESSAGES.each do |msg|
+      @pasieka.parse_message(msg)
+    end
+
+    repository(:test) do
+      lambda {@pasieka.save_typos}.should change {@pasieka.typos.count}
+    end
+
+  end
+
+  it "should not clear typos after save if proper argument was passed" do
+    @pasieka.typos.clear
+
+    TEST_MESSAGES.each do |msg|
+      @pasieka.parse_message(msg)
+    end
+
+    repository(:test) do
+      lambda {@pasieka.save_typos(false)}.should_not change {@pasieka.typos.count}
+    end
+  end
+
 end
