@@ -1,7 +1,4 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
-
-require "init.rb"
+require "lib/init"
 require "spec"
 require "spec/autorun"
 require "fileutils"
@@ -15,4 +12,4 @@ DataMapper.setup(:default, "sqlite3://#{test_database_path}")
 DataMapper.auto_upgrade!
 
 # load test messages
-TEST_MESSAGES = YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), 'test_messages.yml')))
+TEST_MESSAGES = YAML.load_file('spec/test_messages.yml')
