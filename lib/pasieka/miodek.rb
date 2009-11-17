@@ -8,7 +8,7 @@ class Miodek
     @api = RestClient::Resource.new('http://api.blip.pl', :user => @user, :password => @password, :headers => { :blip_api => 0.2 })
   end
 
-  def get_messages(offset = nil)
+  def get_messages(offset = 0)
     JSON.parse(
       @api["users/drmiodek/updates?offset=#{offset}&limit=50"].get :accept => 'application/json'
     )

@@ -13,18 +13,8 @@ describe Miodek do
 
   end
 
-=begin
-
-    To prawdopodobnie *działa*. Jednak pobranie wiadomości zabiera
-    kilka cennych sekund, a dla mnie, użytkownika iPlusa,
-    czas jest bardzo ważny.
-
-    Dlatego na razie porzucam testowanie tego fragmentu kodu.
-
   it "should get recent messages" do
     @miodek.get_messages.should be_a_kind_of Array
   end
-
-=end
 
 end

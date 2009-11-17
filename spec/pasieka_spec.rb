@@ -4,6 +4,7 @@ describe Pasieka do
   
   before :all do
     @pasieka = Pasieka.new
+    @miodek = Miodek.new
   end
 
   before :each do
@@ -14,7 +15,7 @@ describe Pasieka do
 
   it "should parse messages" do
 
-    TEST_MESSAGES.each do |msg|
+    @miodek.get_messages.each do |msg|
       @pasieka.parse_message(msg)
       @pasieka.typos.last.should be_a_kind_of Hash
     end
@@ -32,7 +33,7 @@ describe Pasieka do
 
   it "should clear typos after save" do
 
-    TEST_MESSAGES.each do |msg|
+    @miodek.get_messages.each do |msg|
       @pasieka.parse_message(msg)
     end
 
@@ -43,7 +44,7 @@ describe Pasieka do
   it "should not clear typos after save if proper argument was passed" do
     @pasieka.typos.clear
 
-    TEST_MESSAGES.each do |msg|
+    @miodek.get_messages.each do |msg|
       @pasieka.parse_message(msg)
     end
 
