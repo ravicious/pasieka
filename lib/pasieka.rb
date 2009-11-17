@@ -11,5 +11,5 @@ end
 
 # load all libs
 %w(miodek pasieka).each do |lib|
-  require File.dirname(__FILE__) + '/pasieka/' + lib
+  require "lib/pasieka/#{lib}"
 end

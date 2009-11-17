@@ -12,7 +12,7 @@ DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/db/pasie
 
 # load all models
 %w(typo).each do |model|
-  require File.dirname(__FILE__) + '/models/' + model
+  require "lib/models/#{model}"
 end
 
 DataMapper.auto_upgrade!

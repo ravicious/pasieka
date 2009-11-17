@@ -17,7 +17,7 @@ class Miodek
   protected
 
   def config
-    YAML.load_file(File.expand_path(File.join(File.dirname(__FILE__), '..', '..', 'config', 'config.yml')))
+    YAML.load_file('lib/config/config.yml')
   end
 
 end

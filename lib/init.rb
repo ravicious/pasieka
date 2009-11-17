@@ -1,3 +1,3 @@
 %w(datamapper pasieka).each do |lib|
-  require File.dirname(__FILE__) + "/#{lib}.rb"
+  require "lib/#{lib}"
 end
