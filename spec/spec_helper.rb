@@ -4,12 +4,7 @@ require "spec/autorun"
 require "fakeweb"
 require "fileutils"
 
-test_database_path = "#{Dir.pwd}/db/pasieka_test.sqlite3"
-
-# Clear test database
-FileUtils.rm(test_database_path) if File.exists? test_database_path
-
-DataMapper.setup(:default, "sqlite3://#{test_database_path}")
+DataMapper.setup(:default, "sqlite3::memory:")
 DataMapper.auto_upgrade!
 
 # load test messages
