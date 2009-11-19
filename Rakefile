@@ -27,23 +27,21 @@ end
 
 namespace :messages do
 
-  desc "Get recent messages manually"
-  task :parse => :environment do
+  desc "Save typos to the database"
+  task :save => :environment do
+    typos_before = Typo.all.count
+    typo_counters_before = TypoCounter.all.count
 
-    @miodek.get_messages.each do |msg|
-      @pasieka.parse_message msg
+    Miodek.get_messages.each do |msg|
+      Pasieka.parse_message msg
     end
 
-  end
+    Pasieka.save_typos
 
-  desc "Save typos to the database"
-  task :save => :parse do
-    count_before = Typo.all.count
+    typos_after = Typo.all.count
+    typo_counters_after = TypoCounter.all.count
 
-    @pasieka.save_typos
-
-    count_after = Typo.all.count
-    puts "#{count_after - count_before} typos saved into the database"
+    puts "#{typos_after - typos_before} typos and #{typo_counters_after - typo_counters_before} typo counters saved into the database"
   end
 
 end

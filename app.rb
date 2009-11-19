@@ -2,9 +2,6 @@
   require lib
 end
 
-@miodek = Miodek.new
-@pasieka = Pasieka.new
-
 ### Kontrolery
 
 get '/' do
