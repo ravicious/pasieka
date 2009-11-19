@@ -47,4 +47,24 @@ describe Pasieka do
 
   end
 
+  it "should save typos and create new typo counters" do
+    Typo.all.destroy!
+
+    # Dodaj nowe wiadomości
+    lambda {
+      Miodek.get_messages.each do |msg|
+        Pasieka.parse_message(msg)
+      end
+      Pasieka.save_typos
+    }.should change{Typo.all.count}
+
+    # Wszystkie wiadomości już istnieją, nie podbijaj więc licznika
+    lambda {
+      Miodek.get_messages.each do |msg|
+        Pasieka.parse_message(msg)
+      end
+      Pasieka.save_typos
+    }.should_not change{TypoCounter.first.counter}
+  end
+
 end

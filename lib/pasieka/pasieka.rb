@@ -30,7 +30,12 @@ class Pasieka
     def save_typos(clear_typos_after_save = true)
 
       typos.each do |typo|
-        Typo.new(:typo => typo[:typo], :correct_form => typo[:correct_form], :blip_id => typo[:blip_id]).save
+
+        new_typo = Typo.new(:typo => typo[:typo], :correct_form => typo[:correct_form], :blip_id => typo[:blip_id])
+
+        if new_typo.save
+          TypoCounter.bump_or_create :typo => new_typo.typo, :correct_form => new_typo.correct_form
+        end
       end
 
       typos.clear if clear_typos_after_save
