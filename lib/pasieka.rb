@@ -10,6 +10,6 @@
 end
 
 # load all libs
-%w(miodek pasieka).each do |lib|
+%w(miodek pasieka blipapi).each do |lib|
   require "lib/pasieka/#{lib}"
 end

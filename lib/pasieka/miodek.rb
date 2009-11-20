@@ -15,9 +15,13 @@ class Miodek
       @@password
     end
 
-    def get_messages(offset = 0)
+    def get_messages(offset = 0, since = nil)
       JSON.parse(
-        @@api["users/drmiodek/updates?offset=#{offset}&limit=50"].get :accept => 'application/json'
+        if since
+          @@api["users/drmiodek/updates/#{since}/since?limit=50"].get :accept => 'application/json'
+        else
+          @@api["users/drmiodek/updates?offset=#{offset}&limit=50"].get :accept => 'application/json'
+        end
       )
     end
 

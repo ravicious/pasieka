@@ -2,6 +2,10 @@
   require lib
 end
 
+configure :production do
+  BlipApi.start
+end
+
 ### Kontrolery
 
 get '/' do
