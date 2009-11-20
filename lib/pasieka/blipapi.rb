@@ -21,7 +21,7 @@ class BlipApi
           $stdout.puts e
         end
 
-        self.wait(10)
+        self.wait(300)
       end
 
     end
