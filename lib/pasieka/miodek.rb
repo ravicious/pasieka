@@ -1,5 +1,12 @@
 class Miodek
-  config = YAML.load_file('lib/config/config.yml')
+
+  begin
+    config = YAML.load_file('lib/config/config.yml')
+  rescue Errno::ENOENT
+    # Jeśli nie ma pliku...
+    config = nil
+  end
+
   @@user = ENV['BLIP_USER'] || config['user']
   @@password = ENV['BLIP_PASSWORD'] || config['password']
 
