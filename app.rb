@@ -1,9 +1,11 @@
-%w(sinatra lib/init).each do |lib|
+%w(sinatra lib/init haml).each do |lib|
   require lib
 end
 
 ### Kontrolery
 
 get '/' do
-  "Hello world!"
+  @typo_counters = TypoCounter.all(:order => [ :counter.desc ])
+
+  haml :index
 end

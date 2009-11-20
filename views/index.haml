@@ -1,0 +1,10 @@
+%table
+  %tr
+    %th Błąd
+    %th Poprawna forma
+    %th Liczba wystąpień
+  - @typo_counters.each do |typo_counter|
+    %tr
+      %td= typo_counter.typo
+      %td= typo_counter.correct_form
+      %td= typo_counter.counter
